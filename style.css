@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    transition: all 1s ease-in-out;
 }
 .contaner{
     width: 100%;
@@ -48,6 +49,9 @@
     height: 60px;
     border-radius: 60px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search-bar button img{
     width: 0.875rem;
@@ -87,4 +91,12 @@
 .humidity, .wind{
     font-size: 1.25rem !important;
     font-weight: 800;  
+}
+.weather{
+    display: none;
+}
+.error{
+    margin-block-start: 3rem;
+    font-size: 1rem;
+    display: none;
 }
