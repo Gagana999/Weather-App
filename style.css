@@ -69,6 +69,7 @@
     font-weight: 300;
 }
 .details{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,4 +100,51 @@
     margin-block-start: 3rem;
     font-size: 1rem;
     display: none;
+}
+
+@media(max-width: 430px){
+    .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar input{
+        padding-block: 1rem;
+        font-size: 0.8rem;
+        flex-grow: 1;
+        height: 2.75rem;
+    }
+    .search-bar button{
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+    .weather-icon{
+        width: 150px;
+    }
+    .city{
+        font-size: 2.441rem;
+        font-weight: 700;
+    }
+    .temp{
+        font-size: 1.563rem;
+        font-weight: 900;
+    }
+    .col p{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .col img{
+        width: 30px;
+    }
+    .humidity, .wind{
+        font-size: 1rem !important;
+        font-weight: 900;
+    }
+    .details{
+        width: 100% !important;
+        gap: 2rem;
+        padding: 0;
+    }
 }
